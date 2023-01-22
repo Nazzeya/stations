@@ -1,0 +1,52 @@
+<svg width="1000px" height="500px">
+    
+
+    <!-- JUST STATIONS -->
+    <ng-container *ngFor="let station of stations; let i = index">
+        <rect [attr.x]="50+150*i" y="100" width="100" height="50"/>
+    </ng-container>
+
+    <!-- ID of stations -->
+    <ng-container *ngFor="let station of stations; let i = index">
+        <text [attr.x]="97+150*i" y="140" width="100" height="50">{{station.id}}</text>
+    </ng-container>
+
+    <!-- VALUE1 of all stations -->
+    <ng-container *ngFor="let station of stations; let i = index">
+        <circle [attr.cx]="75+150*i" cy="115" r="5" fill="red" [class.green]="station.value1"/>
+    </ng-container>
+
+    <!-- VALUE2 of all stations -->
+    <ng-container *ngFor="let station of stations; let i = index">
+        <circle [attr.cx]="100+150*i" cy="115" r="5" fill="red" [class.green]="station.value2"/>
+    </ng-container>
+
+    <!-- VALUE3 of all stations -->
+    <ng-container *ngFor="let station of stations; let i = index">
+        <circle [attr.cx]="125+150*i" cy="115" r="5" fill="red" [class.green]="station.value3"/>
+    </ng-container>
+
+    
+    <!-- <rect x="50" y="100" width="100" height="50"/>
+        <rect x="200" y="100" width="100" height="50" />
+        <rect x="350" y="100" width="100" height="50" />
+        <rect x="500" y="100" width="100" height="50" /> -->
+
+    <!-- <circle cx="75" cy="115" r="5" fill="red" />
+        <circle cx="225" cy="115" r="5" />
+        <circle cx="375" cy="115" r="5" />
+        <circle cx="525" cy="115" r="5" /> -->
+
+    <!-- <circle cx="100" cy="115" r="5" />
+        <circle cx="250" cy="115" r="5" />
+        <circle cx="400" cy="115" r="5" />
+        <circle cx="550" cy="115" r="5" /> -->
+
+    
+    <!-- <circle cx="125" cy="115" r="5" />
+    <circle cx="275" cy="115" r="5" />
+    <circle cx="425" cy="115" r="5" />
+    <circle cx="575" cy="115" r="5" /> -->
+
+    <polyline points="0,50 100,50 100,100 100,50 250,50 250,100 250,50 400,50 400,100 400,50 550,50 550,100" fill="none" stroke="grey"/>
+</svg>

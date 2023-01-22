@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IStation } from './models/station';
+import { stations as data } from './data/stations';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'stations';
+
+  stations: IStation[] = data;
+
+  check(value: boolean) {
+    if(value==true) return true
+    else return false
+  }
 }
