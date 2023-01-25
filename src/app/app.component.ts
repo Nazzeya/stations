@@ -10,9 +10,5 @@ import { stations as data } from './data/stations';
 export class AppComponent {
 
   stations: IStation[] = data;
-
-  check(value: boolean) {
-    if(value==true) return true
-    else return false
-  }
+  
 }

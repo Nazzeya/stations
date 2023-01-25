@@ -24,5 +24,47 @@ export const stations: IStation[] = [
         value1: true,
         value2: true,
         value3: false
-    }
+    },
+    {
+        id: 6,
+        value1: false,
+        value2: true,
+        value3: true
+    },
+    {
+        id: 7,
+        value1: true,
+        value2: true,
+        value3: true
+    },
+    {
+        id: 8,
+        value1: false,
+        value2: true,
+        value3: true
+    },
+    {
+        id: 9,
+        value1: true,
+        value2: false,
+        value3: true
+    },
+    {
+        id: 10,
+        value1: false,
+        value2: true,
+        value3: true
+    },
+    {
+        id: 11,
+        value1: true,
+        value2: true,
+        value3: true
+    },
+    {
+        id: 12,
+        value1: true,
+        value2: false,
+        value3: true
+    },
 ]

@@ -2,51 +2,109 @@
     
 
     <!-- JUST STATIONS -->
-    <ng-container *ngFor="let station of stations; let i = index">
+    <!-- <ng-container *ngFor="let station of stations; let i = index">
         <rect [attr.x]="50+150*i" y="100" width="100" height="50"/>
-    </ng-container>
+    </ng-container> -->
 
     <!-- ID of stations -->
-    <ng-container *ngFor="let station of stations; let i = index">
+    <!-- <ng-container *ngFor="let station of stations; let i = index">
         <text [attr.x]="97+150*i" y="140" width="100" height="50">{{station.id}}</text>
-    </ng-container>
+    </ng-container> -->
 
     <!-- VALUE1 of all stations -->
-    <ng-container *ngFor="let station of stations; let i = index">
+    <!-- <ng-container *ngFor="let station of stations; let i = index">
         <circle [attr.cx]="75+150*i" cy="115" r="5" fill="red" [class.green]="station.value1"/>
-    </ng-container>
+    </ng-container> -->
 
     <!-- VALUE2 of all stations -->
-    <ng-container *ngFor="let station of stations; let i = index">
+    <!-- <ng-container *ngFor="let station of stations; let i = index">
         <circle [attr.cx]="100+150*i" cy="115" r="5" fill="red" [class.green]="station.value2"/>
-    </ng-container>
+    </ng-container> -->
 
     <!-- VALUE3 of all stations -->
-    <ng-container *ngFor="let station of stations; let i = index">
+    <!-- <ng-container *ngFor="let station of stations; let i = index">
         <circle [attr.cx]="125+150*i" cy="115" r="5" fill="red" [class.green]="station.value3"/>
-    </ng-container>
+    </ng-container> -->
 
+
+    <rect x="50" y="100" width="100" height="50"/>
+    <rect x="200" y="100" width="100" height="50" />
+    <rect x="350" y="100" width="100" height="50" />
+    <rect x="650" y="100" width="100" height="50"/>
+    <rect x="850" y="100" width="100" height="50"/>
+    <rect x="850" y="225" width="100" height="50"/>
+    <rect x="500" y="250" width="100" height="50"/>
+    <rect x="50" y="250" width="100" height="50"/>
+    <rect x="50" y="350" width="100" height="50"/>
+    <rect x="50" y="450" width="100" height="50"/>
+    <rect x="600" y="400" width="100" height="50"/>
+
+    <svg *ngFor="let station of stations; let i = index">
+        <text x="96" y="140">{{stations[0].id}}</text>
+        <text x="246" y="140">{{stations[1].id}}</text>
+        <text x="396" y="140">{{stations[2].id}}</text>
+        <text x="696" y="140">{{stations[3].id}}</text>
+        <text x="896" y="140">{{stations[4].id}}</text>
+        <text x="896" y="265">{{stations[5].id}}</text>
+        <text x="546" y="290">{{stations[6].id}}</text>
+        <text x="96" y="290">{{stations[7].id}}</text>
+        <text x="96" y="390">{{stations[8].id}}</text>
+        <text x="96" y="490">{{stations[9].id}}</text>
+        <text x="646" y="440">{{stations[10].id}}</text>
+    </svg>
     
-    <!-- <rect x="50" y="100" width="100" height="50"/>
-        <rect x="200" y="100" width="100" height="50" />
-        <rect x="350" y="100" width="100" height="50" />
-        <rect x="500" y="100" width="100" height="50" /> -->
 
-    <!-- <circle cx="75" cy="115" r="5" fill="red" />
-        <circle cx="225" cy="115" r="5" />
-        <circle cx="375" cy="115" r="5" />
-        <circle cx="525" cy="115" r="5" /> -->
+    <svg *ngFor="let station of stations; let i = index">
+        <circle cx="75" cy="115" r="5" fill="red" [class.green]="stations[0].value1"/> 
+        <circle cx="225" cy="115" r="5" fill="red" [class.green]="stations[1].value1"/>
+        <circle cx="375" cy="115" r="5" fill="red" [class.green]="stations[2].value1"/>
+        <circle cx="675" cy="115" r="5" fill="red" [class.green]="stations[3].value1"/>
+        <circle cx="875" cy="115" r="5" fill="red" [class.green]="stations[4].value1" />
+        <circle cx="875" cy="240" r="5" fill="red" [class.green]="stations[5].value1" />
+        <circle cx="525" cy="265" r="5" fill="red" [class.green]="stations[6].value1" />
+        <circle cx="75" cy="265" r="5" fill="red" [class.green]="stations[7].value1" />
+        <circle cx="75" cy="365" r="5" fill="red" [class.green]="stations[8].value1" />
+        <circle cx="75" cy="465" r="5" fill="red" [class.green]="stations[9].value1" />
+        <circle cx="625" cy="415" r="5" fill="red" [class.green]="stations[10].value1" />
+    </svg>
 
-    <!-- <circle cx="100" cy="115" r="5" />
-        <circle cx="250" cy="115" r="5" />
-        <circle cx="400" cy="115" r="5" />
-        <circle cx="550" cy="115" r="5" /> -->
+        <!-- Value 2 -->
+    <svg *ngFor="let station of stations; let i = index">
+        <circle cx="100" cy="115" r="5" fill="red" [class.green]="stations[0].value2" />
+        <circle cx="250" cy="115" r="5" fill="red" [class.green]="stations[1].value2" />
+        <circle cx="400" cy="115" r="5" fill="red" [class.green]="stations[2].value2" />
+        <circle cx="700" cy="115" r="5" fill="red" [class.green]="stations[3].value2" />
+        <circle cx="900" cy="115" r="5" fill="red" [class.green]="stations[4].value2" />
+        <circle cx="900" cy="240" r="5" fill="red" [class.green]="stations[5].value2" />
+        <circle cx="550" cy="265" r="5" fill="red" [class.green]="stations[6].value2" />
+        <circle cx="100" cy="265" r="5" fill="red" [class.green]="stations[7].value2" />
+        <circle cx="100" cy="365" r="5" fill="red" [class.green]="stations[8].value2" />
+        <circle cx="100" cy="465" r="5" fill="red" [class.green]="stations[9].value2" />
+        <circle cx="650" cy="415" r="5" fill="red" [class.green]="stations[10].value2" />
+    </svg>
 
-    
-    <!-- <circle cx="125" cy="115" r="5" />
-    <circle cx="275" cy="115" r="5" />
-    <circle cx="425" cy="115" r="5" />
-    <circle cx="575" cy="115" r="5" /> -->
+    <!-- Value 3 -->
+    <svg *ngFor="let station of stations; let i = index">
+        <circle cx="125" cy="115" r="5" fill="red" [class.green]="stations[0].value3" />
+        <circle cx="275" cy="115" r="5" fill="red" [class.green]="stations[1].value3" />
+        <circle cx="425" cy="115" r="5" fill="red" [class.green]="stations[2].value3" />
+        <circle cx="725" cy="115" r="5" fill="red" [class.green]="stations[3].value3" />
+        <circle cx="925" cy="115" r="5" fill="red" [class.green]="stations[4].value3" />
+        <circle cx="925" cy="240" r="5" fill="red" [class.green]="stations[5].value3" />
+        <circle cx="575" cy="265" r="5" fill="red" [class.green]="stations[6].value3" />
+        <circle cx="125" cy="265" r="5" fill="red" [class.green]="stations[7].value3" />
+        <circle cx="125" cy="365" r="5" fill="red" [class.green]="stations[8].value3" />
+        <circle cx="125" cy="465" r="5" fill="red" [class.green]="stations[9].value3" />
+        <circle cx="675" cy="415" r="5" fill="red" [class.green]="stations[10].value3" />
+    </svg>    
 
-    <polyline points="0,50 100,50 100,100 100,50 250,50 250,100 250,50 400,50 400,100 400,50 550,50 550,100" fill="none" stroke="grey"/>
+    <polyline 
+        points="100,50 100,100 100,50 250,50 250,100 250,50 400,50 400,100 400,50 800,50 800,125 750,125 850,125 800,125 800,250 850,250" 
+        fill="none" stroke="grey"/>
+    <polyline
+        points="400,150 400,200 700,200 700,150 700,200 550,200 550,250"
+        fill="none" stroke="grey" />
+    <polyline 
+        points="500,275 150,275 200,275 200,375 150,375 200,375 200,475 150,475 200,475 200,425 600,425" 
+        fill="none" stroke="grey" />
 </svg>
